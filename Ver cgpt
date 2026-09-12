@@ -55,6 +55,35 @@ textarea{resize:vertical;min-height:70px}
 .case-link:hover{text-decoration:underline}
 .field-handle{cursor:grab;font-size:10px;color:#94a3b8;margin-bottom:2px}
 .dragging{opacity:0.4}
+
+/* ===== ADVANCED CRM ADD-ON ===== */
+.adv-toolbar{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin:10px 0}.adv-toolbar select,.adv-toolbar input{width:auto;min-width:120px;margin:0}.adv-panel{background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:10px;margin:8px 0}.adv-panel[hidden]{display:none}.adv-pagination{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}.adv-page-buttons{display:flex;gap:5px;flex-wrap:wrap}.adv-page-buttons button{min-width:34px}.adv-muted{font-size:11px;color:#64748b}.adv-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:10px 0}.adv-kpi{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:10px}.adv-kpi b{display:block;font-size:18px;color:#1e3a8a}.adv-kpi span{font-size:11px;color:#64748b}.adv-timeline{position:relative;padding-left:18px}.adv-timeline:before{content:"";position:absolute;left:5px;top:0;bottom:0;width:2px;background:#cbd5e1}.adv-timeline-item{position:relative;margin:0 0 12px;padding:9px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:8px}.adv-timeline-item:before{content:"";position:absolute;left:-17px;top:13px;width:8px;height:8px;border-radius:50%;background:#1e3a8a}.adv-doc{display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid #e2e8f0;border-radius:7px;padding:8px;margin:6px 0;background:#fff}.adv-danger-text{color:#b91c1c;font-weight:700}.adv-lock{font-size:10px;margin-left:5px}.adv-modal-wide{max-width:850px!important}.adv-help{font-size:11px;color:#64748b;margin-top:4px}
+@media(max-width:768px){.adv-toolbar select,.adv-toolbar input{flex:1;min-width:135px}.adv-toolbar .btn{flex:1;justify-content:center}.adv-doc{align-items:flex-start;flex-direction:column}}
+
+/* ===== PREMIUM MACT LEGAL PRO UI — VISUAL LAYER ONLY ===== */
+:root{--primary:#123b78;--primary2:#2563eb;--gold:#c89b3c;--gold-soft:#f5e7c3;--bg:#f3f6fb;--card:#fff;--text:#0b1830;--secondary:#64748b;--border:#d9e2ef;--success:#059669;--warning:#d97706;--danger:#dc2626;--shadow:0 10px 30px rgba(15,35,70,.08);--shadow2:0 18px 45px rgba(15,35,70,.12)}
+html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 15% 0%,#e9f1ff 0,transparent 28%),linear-gradient(180deg,#f7f9fd 0%,#eef3f9 100%);color:var(--text);padding:14px;letter-spacing:.05px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(37,99,235,.025),transparent 35%,rgba(200,155,60,.025));z-index:-1}
+header{position:sticky;top:10px;z-index:90;background:linear-gradient(135deg,#0b2348,#123b78 58%,#1e5bb8);color:#fff;padding:16px 18px;border:1px solid rgba(255,255,255,.12);border-radius:18px;box-shadow:0 14px 35px rgba(9,32,70,.2);margin-bottom:18px;backdrop-filter:blur(12px)}
+header h1{color:#fff;font-size:21px;letter-spacing:.2px}header h1:after{content:" • SMART CASE MANAGEMENT";font-size:9px;color:#f5d98b;font-weight:700;letter-spacing:1.2px;vertical-align:middle;margin-left:6px}
+header [id="connectionStatus"]{color:#dbeafe}header [id="syncStatus"],header [id="lastSyncStatus"]{color:#d7e5fb}
+header .btn{box-shadow:0 5px 14px rgba(0,0,0,.12)}header .btn-light{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);color:#fff}
+.btn{border-radius:10px;padding:9px 13px;transition:transform .16s ease,box-shadow .16s ease,filter .16s ease}.btn:hover{opacity:1;transform:translateY(-1px);box-shadow:0 7px 16px rgba(15,35,70,.14)}.btn:active{transform:translateY(0)}
+.stats-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.stat-card{position:relative;overflow:hidden;padding:17px 18px;border:1px solid var(--border);border-left:0;border-radius:16px;box-shadow:var(--shadow);background:rgba(255,255,255,.94)}.stat-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,var(--primary2),var(--gold))}.stat-card:after{content:"";position:absolute;right:-25px;bottom:-35px;width:90px;height:90px;border-radius:50%;background:rgba(37,99,235,.05)}.stat-card h3{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:#64748b}.stat-card .value{font-size:28px;color:#0b2348;margin-top:2px}
+.card{border:1px solid var(--border);border-radius:17px;padding:18px;box-shadow:var(--shadow);background:rgba(255,255,255,.94);margin-bottom:17px}.card h2{color:#123b78}.card>div:first-child h2{letter-spacing:.1px}
+#advancedControlCard{background:linear-gradient(135deg,#fff,#f7fbff);border-color:#cddbf0}.adv-toolbar{gap:8px}.adv-panel{background:#f8fbff;border-color:#d8e4f3;border-radius:12px}.adv-kpi{border-radius:12px;box-shadow:0 4px 12px rgba(15,35,70,.05)}
+.search-box{height:46px;border:1px solid #cbd8e8;border-radius:13px;background:#fbfdff;padding:11px 14px;font-size:14px;box-shadow:inset 0 1px 2px rgba(15,35,70,.03);outline:none}.search-box:focus,input:focus,select:focus,textarea:focus{border-color:#4f83dc;box-shadow:0 0 0 3px rgba(37,99,235,.10);outline:none}
+table{border-collapse:separate;border-spacing:0 6px;margin-top:7px}th{background:#edf3fb;color:#38516f;border:0;text-transform:uppercase;font-size:10px;letter-spacing:.55px;padding:11px 10px}th:first-child{border-radius:9px 0 0 9px}th:last-child{border-radius:0 9px 9px 0}td{background:#fff;border-top:1px solid #e4ebf4;border-bottom:1px solid #e4ebf4;padding:11px 10px}td:first-child{border-left:1px solid #e4ebf4;border-radius:10px 0 0 10px}td:last-child{border-right:1px solid #e4ebf4;border-radius:0 10px 10px 0}tbody tr{transition:transform .15s ease,box-shadow .15s ease}tbody tr:hover{transform:translateY(-1px)}.case-link{color:#1458b5}.badge{border:1px solid #dce5ef;padding:4px 9px;border-radius:999px}.badge.success{border-color:#b7e8d4}.badge.warning{border-color:#f4d99a}.badge.danger{border-color:#fecaca}
+.section{border:1px solid #dbe5f0;border-radius:13px;box-shadow:0 3px 10px rgba(15,35,70,.035);margin-bottom:14px}.section-title{background:linear-gradient(90deg,#f1f6fc,#fbfdff);color:#173b6b;padding:13px 15px}.section-title:hover{background:#edf4fc}.section-body{background:#fff;padding:15px}.field{gap:6px}.field-handle{color:#a2b2c6}label{font-size:11px;letter-spacing:.15px;color:#52677f}input,select,textarea{border-color:#d3deeb;border-radius:9px;background:#fff;padding:9px 10px;min-height:38px}textarea{min-height:82px}
+.modal{background:rgba(5,18,38,.58);backdrop-filter:blur(5px);padding:12px}.modal-content{border:1px solid rgba(210,224,242,.9);border-radius:18px;box-shadow:var(--shadow2);padding:22px;animation:premiumIn .18s ease-out}.modal-content h2{color:#123b78}@keyframes premiumIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
+.proceeding{background:linear-gradient(135deg,#f8fbff,#fff);border-color:#dce6f1;border-radius:11px}.toast{border-radius:11px;box-shadow:0 12px 28px rgba(0,0,0,.18)}
+/* Mobile: turn dense CRM table into readable horizontal card-like rows */
+@media(max-width:768px){body{padding:9px}header{position:relative;top:auto;border-radius:15px;padding:14px;margin-bottom:12px}header h1{font-size:18px}header h1:after{display:block;margin:4px 0 0;font-size:8px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:9px}.stat-card{padding:13px 14px;border-radius:13px}.stat-card .value{font-size:23px}.card{padding:13px;border-radius:14px}.card h2{font-size:15px!important}.actions-bar,.adv-toolbar{gap:7px}.adv-toolbar .btn{min-height:40px}.adv-toolbar select,.adv-toolbar input{min-height:40px}.search-box{height:44px}.modal{align-items:flex-end;padding:0}.modal-content{max-height:94vh;border-radius:19px 19px 0 0;padding:16px;width:100%;animation:premiumSheet .2s ease-out}@keyframes premiumSheet{from{transform:translateY(20px);opacity:.5}to{transform:none;opacity:1}}.form-grid{grid-template-columns:1fr!important}.field.full{grid-column:auto}table{min-width:1050px}#recordsTableBody td{font-size:12px}.section-title{font-size:13px}.proceeding-grid{gap:8px}.adv-pagination{font-size:11px}}
+@media(min-width:769px) and (max-width:1100px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* premium scrollbar */
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:#edf2f8}::-webkit-scrollbar-thumb{background:#b8c8dc;border-radius:99px}::-webkit-scrollbar-thumb:hover{background:#8ea6c2}
+
 </style>
 </head>
 <body>
@@ -73,8 +102,11 @@ textarea{resize:vertical;min-height:70px}
   <button class="btn btn-warning" id="topAddDateBtn">📅 Add Hearing Date</button>
   <button class="btn btn-light" id="googleLoginBtn">☁️ Connect Drive</button>
   <button class="btn btn-light" id="restoreCloudBtn">🔄 Restore Cloud</button>
+   <button class="btn btn-light" id="recycleBinBtn">🗑️ Recycle Bin</button>
  </div>
 </header>
+
+<div class="premium-welcome" style="margin:0 0 14px;padding:12px 15px;border:1px solid #dbe5f0;border-radius:14px;background:linear-gradient(100deg,rgba(255,255,255,.96),rgba(239,246,255,.92));box-shadow:0 5px 18px rgba(15,35,70,.05);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><div><strong style="color:#123b78;font-size:13px">⚖️ MACT Legal Workspace</strong><div style="font-size:11px;color:#64748b;margin-top:2px">Offline-first • Case records • Hearings • Documents • Backup • Analytics</div></div><div style="font-size:10px;color:#8a6a22;font-weight:700;background:#fff8e7;border:1px solid #eed9a3;padding:6px 9px;border-radius:999px">PROFESSIONAL EDITION</div></div>
 
 <div class="stats-grid">
  <div class="stat-card">
@@ -253,12 +285,132 @@ textarea{resize:vertical;min-height:70px}
  </div>
 </div>
 
+
+
+<!-- ===== ADVANCED FEATURES UI ===== -->
+<div class="card" id="advancedControlCard">
+ <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+  <h2 style="margin:0;font-size:16px">🚀 Advanced Case Management</h2>
+  <span class="adv-muted" id="advancedResultInfo">Advanced tools active</span>
+ </div>
+ <div class="adv-toolbar">
+  <button class="btn btn-light" id="toggleFiltersBtn">🔎 Advanced Filters</button>
+  <button class="btn btn-light" id="bulkEditBtn">✏️ Bulk Edit</button>
+  <button class="btn btn-light" id="duplicatesBtn">♻️ Find Duplicates</button>
+  <button class="btn btn-light" id="backupBtn">💾 Backup / Restore</button>
+  <button class="btn btn-light" id="caseAnalyticsBtn">📊 Analytics</button>
+  <button class="btn btn-light" id="enableNotificationsBtn">🔔 Hearing Alerts</button><button class="btn btn-light" id="securityBtn">🔐 App Lock</button>
+ </div>
+ <div class="adv-panel" id="advancedFiltersPanel" hidden>
+  <div class="form-grid">
+   <div class="field"><label>Status</label><select id="filterStatus"><option value="">All Status</option><option>Active</option><option>Pending</option><option>Closed</option><option>Disposed</option></select></div>
+   <div class="field"><label>Accident Type</label><select id="filterAccident"><option value="">All Types</option><option>INJURY</option><option>FATAL</option><option>PROPERTY DAMAGE</option></select></div>
+   <div class="field"><label>Vehicle Type</label><select id="filterVehicle"><option value="">All Vehicles</option><option>Motor Cycle</option><option>Car</option><option>Truck</option><option>Bus</option><option>Auto Rickshaw</option><option>Tractor</option><option>Tempo</option><option>Unknown</option></select></div>
+   <div class="field"><label>Insurance Company</label><input id="filterInsurance" placeholder="Contains..."></div>
+   <div class="field"><label>Accident From</label><input id="filterAccidentFrom" type="date"></div>
+   <div class="field"><label>Accident To</label><input id="filterAccidentTo" type="date"></div>
+   <div class="field"><label>Hearing</label><select id="filterHearing"><option value="">Any Hearing</option><option value="today">Today</option><option value="7">Next 7 Days</option><option value="30">Next 30 Days</option><option value="overdue">Overdue</option><option value="none">No Upcoming Hearing</option></select></div>
+   <div class="field"><label>Priority</label><select id="filterPriority"><option value="">All Priorities</option><option>Normal</option><option>Important</option><option>Urgent</option><option>High Priority</option></select></div>
+   <div class="field"><label>Judgment PDF</label><select id="filterPdf"><option value="">Any</option><option value="yes">Attached</option><option value="no">Missing</option></select></div>
+  </div>
+  <div class="adv-toolbar">
+   <button class="btn btn-success" id="applyFiltersBtn">Apply</button><button class="btn btn-light" id="clearFiltersBtn">Clear</button>
+  </div>
+ </div>
+ <div class="adv-toolbar">
+  <label style="display:flex;align-items:center;gap:5px">Sort <select id="sortRecords"><option value="updated_desc">Recently Updated</option><option value="next_asc">Next Hearing</option><option value="accident_desc">Accident Date ↓</option><option value="accident_asc">Accident Date ↑</option><option value="case_asc">Case A-Z</option><option value="case_desc">Case Z-A</option><option value="mact_asc">MACT No. A-Z</option></select></label>
+  <label style="display:flex;align-items:center;gap:5px">Rows <select id="pageSize"><option>10</option><option selected>25</option><option>50</option><option>100</option></select></label>
+  <button class="btn btn-light" id="selectVisibleBtn">☑️ Select Visible</button>
+  <button class="btn btn-light" id="clearSelectionBtn">☐ Clear Selection</button>
+ </div>
+ <div class="adv-muted" id="filterSummary"></div>
+ <div class="adv-pagination" id="advancedPagination"></div>
+</div>
+
+<!-- BULK EDIT -->
+<div class="modal" id="bulkEditModal"><div class="modal-content" style="max-width:600px">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">✏️ Bulk Edit Selected Cases</h2><button class="btn btn-light" data-close="bulkEditModal">✕</button></div>
+ <p class="adv-help" id="bulkEditCount">0 records selected.</p>
+ <form id="bulkEditForm">
+  <div class="form-grid">
+   <div class="field"><label>Final Status</label><select id="bulkFinalStatus"><option value="">— Keep Existing —</option><option>Active</option><option>Pending</option><option>Closed</option><option>Disposed</option></select></div>
+   <div class="field"><label>Importance</label><select id="bulkImportance"><option value="">— Keep Existing —</option><option>Normal</option><option>Important</option><option>Urgent</option><option>High Priority</option></select></div>
+   <div class="field"><label>Insurance Company</label><input id="bulkInsurance" placeholder="Leave blank to keep existing"></div>
+   <div class="field"><label>Our Side Representation</label><input id="bulkRepresentation" placeholder="Leave blank to keep existing"></div>
+  </div>
+  <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:15px"><button type="button" class="btn btn-light" data-close="bulkEditModal">Cancel</button><button class="btn btn-success">Apply Changes</button></div>
+ </form>
+</div></div>
+
+<!-- BACKUP -->
+<div class="modal" id="backupModal"><div class="modal-content" style="max-width:650px">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">💾 Backup & Restore Center</h2><button class="btn btn-light" data-close="backupModal">✕</button></div>
+ <div class="adv-kpis"><div class="adv-kpi"><b id="backupCount">0</b><span>Records</span></div><div class="adv-kpi"><b id="backupSize">0 KB</b><span>Estimated JSON</span></div><div class="adv-kpi"><b id="backupLast">Never</b><span>Last Local Backup</span></div></div>
+ <div class="adv-panel"><strong>Download</strong><p class="adv-help">Create a complete local JSON backup. It includes records, proceedings, custom fields and audit information.</p><button class="btn btn-success" id="downloadJsonBackupBtn">⬇️ Download JSON Backup</button> <button class="btn btn-light" id="downloadCsvAdvancedBtn">📊 Download CSV</button></div>
+ <div class="adv-panel"><strong>Restore</strong><p class="adv-help">Restore adds/updates records by Record ID. It does not silently erase your current records.</p><input type="file" id="restoreJsonInput" accept="application/json,.json"><div style="margin-top:8px"><button class="btn btn-warning" id="restoreJsonBtn">♻️ Restore JSON</button></div></div>
+ <div class="adv-panel"><strong>Safety</strong><div class="adv-help">Before destructive operations, download a backup. Existing CSV import/export remains available above.</div></div>
+</div></div>
+
+<!-- DUPLICATES -->
+<div class="modal" id="duplicatesModal"><div class="modal-content adv-modal-wide">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">♻️ Duplicate Case Finder</h2><button class="btn btn-light" data-close="duplicatesModal">✕</button></div>
+ <p class="adv-help">Possible duplicates are grouped by MACT No., File Number, or Vehicle + Accident Date. Review before deleting anything.</p>
+ <div id="duplicatesBody"></div>
+</div></div>
+
+<!-- ANALYTICS -->
+<div class="modal" id="analyticsModal"><div class="modal-content adv-modal-wide">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">📊 Case Analytics</h2><button class="btn btn-light" data-close="analyticsModal">✕</button></div>
+ <div id="analyticsBody"></div>
+</div></div>
+
+<!-- DOCUMENT MANAGER -->
+<div class="modal" id="documentsModal"><div class="modal-content adv-modal-wide">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">📁 Case Document Manager</h2><button class="btn btn-light" data-close="documentsModal">✕</button></div>
+ <div id="documentsCaseTitle" class="adv-help"></div>
+ <div class="adv-panel"><label>Add Document</label><input type="file" id="caseDocumentInput"><div class="adv-help">For reliability, individual documents are limited to 2 MB. PDFs, images and common office files can be stored locally and synced as part of the case record.</div><button class="btn btn-success" id="addCaseDocumentBtn" style="margin-top:7px">＋ Add Document</button></div>
+ <div id="documentsList"></div>
+</div></div>
+
+<!-- PROCEEDING EDITOR -->
+<div class="modal" id="proceedingEditModal"><div class="modal-content" style="max-width:600px">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">✏️ Edit Proceeding</h2><button class="btn btn-light" data-close="proceedingEditModal">✕</button></div>
+ <form id="proceedingEditForm"><input type="hidden" id="editingProceedingIndex"><div class="form-grid">
+  <div class="field"><label>Proceeding Date</label><input type="date" id="editPDate"></div><div class="field"><label>Next Date</label><input type="date" id="editPNext"></div><div class="field full"><label>Notes / Purpose</label><textarea id="editPNotes"></textarea></div>
+ </div><div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px"><button type="button" class="btn btn-light" data-close="proceedingEditModal">Cancel</button><button class="btn btn-success">Save Proceeding</button></div></form>
+</div></div>
+
+
+<div class="modal" id="securityModal"><div class="modal-content" style="max-width:520px">
+ <div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:18px">🔐 App Lock</h2><button class="btn btn-light" data-close="securityModal">✕</button></div>
+ <p class="adv-help">This is a local browser UI lock. It is not encryption and should not be treated as a substitute for account/device security.</p>
+ <div class="adv-panel"><strong>Set / Change PIN</strong><div class="form-grid" style="margin-top:8px"><div class="field"><label>New 4–8 digit PIN</label><input id="newPin" inputmode="numeric" maxlength="8" type="password"></div><div class="field"><label>Confirm PIN</label><input id="confirmPin" inputmode="numeric" maxlength="8" type="password"></div></div><button class="btn btn-success" id="savePinBtn" style="margin-top:8px">Save PIN</button> <button class="btn btn-danger" id="removePinBtn">Remove Lock</button></div>
+ <div class="adv-panel"><strong>Current status: </strong><span id="lockStatus">Checking…</span></div>
+</div></div>
+<div class="modal" id="pinUnlockModal"><div class="modal-content" style="max-width:400px;text-align:center"><h2 style="margin-top:0">🔒 MACT Portal Locked</h2><p class="adv-help">Enter your local PIN to continue.</p><input id="unlockPin" inputmode="numeric" type="password" maxlength="8" style="text-align:center;font-size:22px;letter-spacing:6px"><button class="btn btn-success" id="unlockBtn" style="margin-top:10px">Unlock</button><div id="unlockMsg" class="adv-danger-text" style="margin-top:8px"></div></div></div>
+
+<!-- RECYCLE BIN -->
+<div class="modal" id="recycleBinModal">
+ <div class="modal-content adv-modal-wide">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+   <h2 style="margin:0;font-size:18px">🗑️ Recycle Bin</h2>
+   <button class="btn btn-light" data-close="recycleBinModal">✕ Close</button>
+  </div>
+  <p class="adv-help">Deleted cases are retained as cloud tombstones. Restore them here or use Restore Cloud to recover deleted cloud records.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:10px 0">
+   <button class="btn btn-success" id="restoreAllTrashBtn">♻️ Restore All</button>
+   <button class="btn btn-danger" id="emptyTrashBtn">🗑️ Empty Local Trash</button>
+  </div>
+  <div id="recycleBinBody"></div>
+ </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
 "use strict";
 
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyXcQaUuaMzkn0epZ4K2sRsEr1qBHmEOAco69eb0tHR6sp-y2kLvDTfwz8VebaUQrzQ/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZrSRDmqZktZfnD5E1ixU_iN6kWiSoiis6N4lVF8TPtg6WgIFt3UDus9yQGUZg_dqP/exec";
 
 const STORAGE_KEY = "mact_unlimited_records";
 const LAYOUT_STORAGE_KEY = "mact_form_sections_layout";
@@ -887,7 +1039,7 @@ if(newFileForm){
   closeModal("newFileModal");
   editingRecordId = null;
   toast(existing ? "Record updated successfully." : "Record saved successfully.");
-  await syncCloud({showToast:true, force:true});
+  await syncCloud();
  };
 }
 
@@ -916,6 +1068,7 @@ function renderTable(){
  if(!tbody) return;
  const query = $("globalSearchInput")?.value.trim().toLowerCase() || "";
  const filtered = records.filter(r => {
+   if(r.deleted || r.deletedAt) return false;
   if(!query) return true;
   return JSON.stringify(r).toLowerCase().includes(query);
  });
@@ -1039,24 +1192,26 @@ if($("printCurrentRecordBtn")) $("printCurrentRecordBtn").onclick = () => { if(c
 function deleteRecord(id){
  const r = getRecord(id);
  if(!r) return;
- if(!confirm(`Delete this record?\n\n${r.caseTitle || r.claimantName || r.mactNo || "Selected Case"}`)) return;
- records = records.filter(x => x.recordId !== r.recordId);
- saveLocal();
- renderAll();
- toast("Record deleted.");
+ if(String(r.locked)==="YES"){ toast("Locked record cannot be deleted. Unlock it first."); return; }
+ if(!confirm(`Move this record to Recycle Bin?\n\n${r.caseTitle || r.claimantName || r.mactNo || "Selected Case"}`)) return;
+ r.deleted=true; r.deletedAt=nowISO(); r.deleteSource="user"; r.updatedAt=nowISO();
+ saveLocal(); renderAll();
+ toast("Record moved to Recycle Bin. It can be restored.");
  syncCloud();
 }
 
 if($("bulkDeleteBtn")){
  $("bulkDeleteBtn").onclick = () => {
-  const ids = [...document.querySelectorAll(".record-check:checked")].map(x => x.value);
-  if(!ids.length){ toast("Please select records first."); return; }
-  if(!confirm(`Delete ${ids.length} selected record(s)?`)) return;
-  records = records.filter(r => !ids.includes(String(r.recordId)));
-  saveLocal();
-  renderAll();
-  toast(`${ids.length} record(s) deleted.`);
-  syncCloud();
+  const ids=[...document.querySelectorAll(".record-check:checked")].map(x=>String(x.value));
+  if(!ids.length){toast("Please select records first.");return;}
+  if(!confirm(`Move ${ids.length} selected record(s) to Recycle Bin?`))return;
+  let n=0;
+  records.forEach(r=>{
+   if(ids.includes(String(r.recordId)) && String(r.locked)!=="YES"){
+    r.deleted=true;r.deletedAt=nowISO();r.deleteSource="bulk";r.updatedAt=nowISO();n++;
+   }
+  });
+  saveLocal();renderAll();toast(`${n} record(s) moved to Recycle Bin.`);syncCloud();
  };
 }
 
@@ -1068,7 +1223,7 @@ if($("selectAllCheckbox")){
 
 function getAllHearings(){
  const list = [];
- records.forEach(r => {
+ records.filter(r => !r.deleted && !r.deletedAt).forEach(r => {
   (r.proceedings || []).forEach(p => {
    if(p.nextDate){ list.push({ record: r, date: p.nextDate, notes: p.notes || "" }); }
   });
@@ -1104,6 +1259,7 @@ function populateHearingSelect(filterText=""){
  if(!select) return;
  const query = filterText.toLowerCase().trim();
  const filtered = records.filter(r => {
+  if(r.deleted || r.deletedAt) return false;
   if(!query) return true;
   return JSON.stringify(r).toLowerCase().includes(query);
  });
@@ -1304,7 +1460,7 @@ function printRecord(id){
 if($("printFilteredRecordsBtn")){
  $("printFilteredRecordsBtn").onclick = () => {
   const query = $("globalSearchInput")?.value.trim().toLowerCase() || "";
-  const list = records.filter(r => !query || JSON.stringify(r).toLowerCase().includes(query));
+  const list = records.filter(r => !r.deleted && !r.deletedAt && (!query || JSON.stringify(r).toLowerCase().includes(query)));
   const rows = list.map(r => `
    <tr><td>${escapeHtml(r.caseTitle || "")}</td><td>${escapeHtml(r.mactNo || "")}</td><td>${escapeHtml(r.claimantName || "")}</td><td>${escapeHtml(formatDate(r.accidentDate))}</td><td>${escapeHtml(r.vehicleNo || "")}</td><td>${escapeHtml(r.insuranceCo || "")}</td><td>${escapeHtml(formatDate(latestNextDate(r)))}</td><td>${escapeHtml(r.finalStatus || r.judgementStatus || "")}</td></tr>
   `).join("");
@@ -1312,286 +1468,101 @@ if($("printFilteredRecordsBtn")){
  };
 }
 
-async function cloudRequest(method="GET", payload=null){
-  const url = APPS_SCRIPT_URL + (method === "GET"
-    ? "?action=get&_=" + Date.now()
-    : "?_=" + Date.now());
-
-  const options = {
-    method,
-    cache: "no-store"
-  };
-
-  if(method !== "GET"){
-    options.headers = {"Content-Type":"text/plain;charset=utf-8"};
-    options.body = JSON.stringify(payload || {});
-  }
-
-  const response = await fetch(url, options);
-
-  if(!response.ok){
-    throw new Error("Cloud HTTP " + response.status);
-  }
-
-  const text = await response.text();
-  if(!text) throw new Error("Empty cloud response");
-
-  let data;
-  try{
-    data = JSON.parse(text);
-  }catch(e){
-    throw new Error("Invalid cloud JSON response");
-  }
-
-  if(data && data.ok === false){
-    throw new Error(data.error || "Cloud operation failed");
-  }
-
-  return data;
+async function syncCloud(){
+ if(syncBusy)return;
+ if(!navigator.onLine){if($("syncStatus"))$("syncStatus").textContent="☁ Offline - saved locally";return;}
+ syncBusy=true;
+ if($("syncStatus"))$("syncStatus").textContent="☁ Syncing...";
+ try{
+  records=records.map(r=>{const x=Object.assign({},r);x.recordId=x.recordId||x.timestamp||uid();x.createdAt=x.createdAt||x.updatedAt||nowISO();x.updatedAt=x.updatedAt||x.createdAt;x.deleted=!!x.deleted;if(x.deleted&&!x.deletedAt)x.deletedAt=x.updatedAt;return x;});
+  saveLocal();
+  const payload={action:"backup",records,updatedAt:nowISO(),source:"MACT Legal Portal",appVersion:"Premium-Fixed-Cloud-v3"};
+  await fetch(APPS_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+  cloudConnected=true;localStorage.setItem("mact_cloud_connected","1");
+  const time=new Date().toLocaleString();localStorage.setItem("mact_last_sync",time);
+  if($("syncStatus"))$("syncStatus").textContent="☁ Cloud Sync Active";
+  if($("lastSyncStatus"))$("lastSyncStatus").textContent="Last Sync: "+time;
+ }catch(err){console.error("Cloud sync error:",err);if($("syncStatus"))$("syncStatus").textContent="☁ Sync failed - Local Safe";}
+ finally{syncBusy=false;}
 }
 
-function normalizeCloudRecords(data){
-  const list = Array.isArray(data)
-    ? data
-    : (data && Array.isArray(data.records) ? data.records : []);
-
-  return list.filter(Boolean).map(r => {
-    if(!r.recordId) r.recordId = r.timestamp || uid();
-    if(!r.updatedAt) r.updatedAt = r.createdAt || nowISO();
-    return r;
-  });
-}
-
-function mergeRecords(localRecords, cloudRecords){
-  const map = new Map();
-
-  (localRecords || []).forEach(r => {
-    if(!r) return;
-    const id = String(r.recordId || r.timestamp || uid());
-    r.recordId = id;
-    map.set(id, r);
-  });
-
-  (cloudRecords || []).forEach(r => {
-    if(!r) return;
-    const id = String(r.recordId || r.timestamp || uid());
-    r.recordId = id;
-
-    const local = map.get(id);
-    if(!local){
-      map.set(id, r);
-      return;
-    }
-
-    const lt = new Date(local.updatedAt || local.createdAt || 0).getTime();
-    const ct = new Date(r.updatedAt || r.createdAt || 0).getTime();
-
-    if(ct >= lt){
-      map.set(id, r);
-    }
-  });
-
-  return [...map.values()];
-}
-
-async function syncCloud(options={}){
-  if(syncBusy && !options.force) return false;
-
-  if(!navigator.onLine){
-    if($("syncStatus")) $("syncStatus").textContent = "☁ Offline - saved locally";
-    return false;
-  }
-
-  syncBusy = true;
-  if($("syncStatus")) $("syncStatus").textContent = "☁ Syncing to Google Drive...";
-
-  try{
-    const payload = {
-      action: "backup",
-      records: records,
-      updatedAt: nowISO(),
-      source: "MACT Legal Portal",
-      appVersion: "2026.09"
-    };
-
-    const data = await cloudRequest("POST", payload);
-
-    cloudConnected = true;
-    localStorage.setItem("mact_cloud_connected", "1");
-
-    const time = new Date().toLocaleString();
-    localStorage.setItem("mact_last_sync", time);
-
-    if($("syncStatus")) $("syncStatus").textContent = "☁ Google Drive Sync Active";
-    if($("lastSyncStatus")) $("lastSyncStatus").textContent = "Last Sync: " + time;
-
-    if(data && data.fileName){
-      localStorage.setItem("mact_cloud_file_name", data.fileName);
-    }
-
-    if(options.showToast !== false){
-      toast(`✓ ${records.length} record(s) saved to Google Drive.`);
-    }
-
-    return true;
-  }catch(err){
-    console.error("Cloud sync error:", err);
-    if($("syncStatus")) $("syncStatus").textContent = "☁ Sync failed - Local Safe";
-    if(options.showToast !== false){
-      toast("Google Drive sync failed. Data is still saved locally.");
-    }
-    return false;
-  }finally{
-    syncBusy = false;
-  }
-}
-
-async function pullCloud(options={}){
-  if(!navigator.onLine){
-    if(options.showToast !== false) toast("You are offline. Local records available.");
-    return false;
-  }
-
-  if($("syncStatus")) $("syncStatus").textContent = "☁ Loading Google Drive data...";
-
-  try{
-    const data = await cloudRequest("GET");
-    const cloudRecords = normalizeCloudRecords(data);
-
-    if(cloudRecords.length){
-      records = mergeRecords(records, cloudRecords);
-      saveLocal();
-      renderAll();
-
-      cloudConnected = true;
-      localStorage.setItem("mact_cloud_connected", "1");
-
-      const time = new Date().toLocaleString();
-      localStorage.setItem("mact_last_sync", time);
-
-      if($("syncStatus")) $("syncStatus").textContent = "☁ Google Drive Sync Active";
-      if($("lastSyncStatus")) $("lastSyncStatus").textContent = "Last Sync: " + time;
-
-      if(options.showToast !== false){
-        toast(`✓ ${cloudRecords.length} cloud record(s) loaded.`);
-      }
-      return true;
-    }
-
-    cloudConnected = true;
-    localStorage.setItem("mact_cloud_connected", "1");
-
-    if($("syncStatus")) $("syncStatus").textContent = "☁ Google Drive Connected";
-
-    // IMPORTANT: if this is a brand-new Drive backup but this browser has
-    // local records, upload them so the cloud becomes the shared source.
-    if(records.length && options.uploadLocalIfCloudEmpty !== false){
-      return await syncCloud({showToast: options.showToast !== false, force:true});
-    }
-
-    if(options.showToast !== false) toast("Google Drive connected. No cloud records found.");
-    return true;
-
-  }catch(err){
-    console.error("Cloud pull error:", err);
-    if($("syncStatus")) $("syncStatus").textContent = "☁ Cloud unavailable - Local Safe";
-    if(options.showToast !== false){
-      toast("Could not load Google Drive data. Check Apps Script deployment.");
-    }
-    return false;
-  }
+async function pullCloud(){
+ if(!navigator.onLine){toast("You are offline. Local records available.");return;}
+ if($("syncStatus"))$("syncStatus").textContent="☁ Connecting...";
+ try{
+  const response=await fetch(APPS_SCRIPT_URL+"?action=get&_="+Date.now(),{method:"GET",cache:"no-store"});
+  const text=await response.text();if(!text)throw new Error("Empty cloud response");
+  const data=JSON.parse(text),cloudRecords=Array.isArray(data)?data:(Array.isArray(data.records)?data.records:[]);
+  const map=new Map(records.map(r=>[String(r.recordId),r]));
+  cloudRecords.forEach(cr=>{if(!cr||typeof cr!=="object")return;cr.recordId=cr.recordId||cr.timestamp||uid();const key=String(cr.recordId),local=map.get(key);if(!local){map.set(key,cr);return;}const lt=new Date(local.updatedAt||local.createdAt||0).getTime(),ct=new Date(cr.updatedAt||cr.createdAt||0).getTime();if(ct>=lt)map.set(key,cr);});
+  records=[...map.values()];saveLocal();renderAll();cloudConnected=true;localStorage.setItem("mact_cloud_connected","1");
+  const time=new Date().toLocaleString();localStorage.setItem("mact_last_sync",time);if($("syncStatus"))$("syncStatus").textContent="☁ Cloud Sync Active";if($("lastSyncStatus"))$("lastSyncStatus").textContent="Last Sync: "+time;
+  toast(`Cloud sync complete. ${cloudRecords.length} cloud record(s) received.`);
+ }catch(err){console.warn("Cloud pull unavailable:",err);cloudConnected=true;localStorage.setItem("mact_cloud_connected","1");updateConnectionUI();toast("Cloud read failed. Local data remains safe.");}
 }
 
 async function restoreFromCloud(){
-  if(!navigator.onLine){
-    toast("You are offline. Cannot restore from cloud.");
-    return;
-  }
-
-  toast("Restoring data from Google Drive...");
-
-  try{
-    const data = await cloudRequest("GET");
-    const cloudRecords = normalizeCloudRecords(data);
-
-    if(!cloudRecords.length){
-      toast("Google Drive backup is empty.");
-      return;
-    }
-
-    const before = records.length;
-    records = mergeRecords(records, cloudRecords);
-    saveLocal();
-    renderAll();
-
-    const added = Math.max(0, records.length - before);
-    toast(`✓ Cloud restore complete. ${added} new record(s) restored; latest versions merged.`);
-  }catch(err){
-    console.error("Restore error:", err);
-    toast("Restore failed. Check Google Apps Script deployment.");
-  }
+ if(!navigator.onLine){toast("You are offline. Cannot restore from cloud.");return;}
+ if(!confirm("Restore all deleted cloud records?\\n\\nDeleted cases will be undeleted and returned to the active case list."))return;
+ toast("Restoring deleted cloud records...");
+ try{
+  const response=await fetch(APPS_SCRIPT_URL+"?action=restore&scope=all&_="+Date.now(),{method:"GET",cache:"no-store"});
+  const text=await response.text();if(!text)throw new Error("Empty restore response");
+  const data=JSON.parse(text),cloudRecords=Array.isArray(data)?data:(Array.isArray(data.records)?data.records:[]);
+  if(!cloudRecords.length){toast("Cloud backup is empty.");return;}
+  const map=new Map(records.map(r=>[String(r.recordId),r]));let restored=0;
+  cloudRecords.forEach(cr=>{if(!cr||typeof cr!=="object")return;cr.recordId=cr.recordId||cr.timestamp||uid();const key=String(cr.recordId),local=map.get(key);if(!local){map.set(key,cr);if(!cr.deleted)restored++;return;}const wasDeleted=!!local.deleted,ct=new Date(cr.updatedAt||0).getTime(),lt=new Date(local.updatedAt||0).getTime();if(!cr.deleted&&(wasDeleted||ct>=lt)){map.set(key,cr);if(wasDeleted)restored++;}});
+  records=[...map.values()];saveLocal();renderAll();cloudConnected=true;localStorage.setItem("mact_cloud_connected","1");const time=new Date().toLocaleString();localStorage.setItem("mact_last_sync",time);if($("lastSyncStatus"))$("lastSyncStatus").textContent="Last Sync: "+time;
+  toast(restored?`${restored} deleted record(s) restored from cloud.`:"No deleted cloud records were found.");
+ }catch(err){console.error("Restore error:",err);toast("Restore failed. Check Apps Script deployment and permissions.");}
 }
 
 if($("restoreCloudBtn")) $("restoreCloudBtn").onclick = restoreFromCloud;
 
 async function connectCloud(){
-  cloudConnected = true;
-  localStorage.setItem("mact_cloud_connected", "1");
-  updateConnectionUI();
-  toast("Connecting to Google Drive...");
-
-  const loaded = await pullCloud({showToast:false, uploadLocalIfCloudEmpty:false});
-
-  if(loaded){
-    toast("✓ Google Drive connected and data loaded.");
-  }else{
-    toast("Google Drive connection failed. Local data remains safe.");
-  }
+ cloudConnected = true;
+ localStorage.setItem("mact_cloud_connected", "1");
+ updateConnectionUI();
+ toast("Connecting to Apps Script cloud...");
+ await pullCloud();
+ if(records.length){ await syncCloud(); }
 }
 
 if($("googleLoginBtn")) $("googleLoginBtn").onclick = connectCloud;
 
 function updateConnectionUI(){
-  const el = $("connectionStatus");
-  if(!el) return;
-
-  if(navigator.onLine){
-    el.textContent = "● Online";
-    el.className = "status online";
-  }else{
-    el.textContent = "● Offline";
-    el.className = "status offline";
-  }
-
-  if(cloudConnected && $("syncStatus")){
-    $("syncStatus").textContent = navigator.onLine
-      ? "☁ Google Drive Sync Active"
-      : "☁ Offline - Local Safe";
-  }
+ const el = $("connectionStatus");
+ if(!el) return;
+ if(navigator.onLine){
+  el.textContent = "● Online";
+  el.className = "status online";
+ }else{
+  el.textContent = "● Offline";
+  el.className = "status offline";
+ }
+ if(cloudConnected && $("syncStatus")){
+  $("syncStatus").textContent = navigator.onLine ? "☁ Cloud Sync Active" : "☁ Offline - Local Safe";
+ }
 }
 
-window.addEventListener("online", async () => {
-  updateConnectionUI();
-  if(cloudConnected){
-    await pullCloud({showToast:false, uploadLocalIfCloudEmpty:true});
-  }else{
-    await pullCloud({showToast:false, uploadLocalIfCloudEmpty:true});
-  }
+window.addEventListener("online", () => {
+ updateConnectionUI();
+ if(cloudConnected) syncCloud();
 });
-
 window.addEventListener("offline", updateConnectionUI);
 
 function updateStats(){
- if($("totalCases")) $("totalCases").textContent = records.length;
- const active = records.filter(r => {
+ const visibleRecords=records.filter(r=>!r.deleted&&!r.deletedAt);
+ if($("totalCases")) $("totalCases").textContent = visibleRecords.length;
+ const active = visibleRecords.filter(r => {
   const s = String(r.finalStatus || r.judgementStatus || "").toLowerCase();
   return !s.includes("closed") && !s.includes("disposed") && !s.includes("settled");
  }).length;
- const pending = records.filter(r => {
+ const pending = visibleRecords.filter(r => {
   const s = String(r.finalStatus || r.judgementStatus || "").toLowerCase();
   return s.includes("pending");
  }).length;
- const judgments = records.filter(r => {
+ const judgments = visibleRecords.filter(r => {
   const s = String(r.judgementStatus || "").toLowerCase();
   return s.includes("judgment") || s.includes("judgement");
  }).length;
@@ -1609,34 +1580,21 @@ function renderAll(){
  if($("lastSyncStatus")) $("lastSyncStatus").textContent = "Last Sync: " + (last || "Never");
 }
 
-async function initializeApp(){
+function initializeApp(){
  loadLocal();
  renderForm();
  renderProceedings([]);
  renderAll();
-
- // Always try the shared cloud first. This is the key fix for a new
- // browser/device: localStorage is browser-specific and cannot carry
- // records from another browser.
- cloudConnected = true;
- updateConnectionUI();
-
- if(navigator.onLine){
-   await pullCloud({
-     showToast:false,
-     uploadLocalIfCloudEmpty:true
-   });
+ if(localStorage.getItem("mact_cloud_connected") === "1"){
+  cloudConnected = true;
+  updateConnectionUI();
+  setTimeout(()=>{ if(navigator.onLine) pullCloud(); }, 1000);
+  cloudTimer = setInterval(()=>{
+   if(cloudConnected && navigator.onLine){ syncCloud(); }
+  }, 60000);
  }else{
-   cloudConnected = false;
-   updateConnectionUI();
+  updateConnectionUI();
  }
-
- cloudTimer = setInterval(()=>{
-   if(navigator.onLine && cloudConnected){
-     syncCloud({showToast:false, force:true});
-   }
- }, 60000);
-
  const openNewBtn = $("openNewFileModalBtn");
  if(openNewBtn) openNewBtn.onclick = openNewRecord;
  if(!records.length && $("topAddDateBtn")){ $("topAddDateBtn").disabled = false; }
@@ -1657,6 +1615,152 @@ window.MACT = {
  editRecord,
  deleteRecord
 };
+
+
+/* ==========================================================
+   ADVANCED FEATURE ENGINE - additive layer; existing features stay intact
+   ========================================================== */
+(function(){
+ "use strict";
+ const ADV_STATE_KEY="mact_advanced_state_v1", AUDIT_KEY="mact_audit_log_v1", TRASH_KEY="mact_undo_trash_v1";
+ let advPage=1, advDeleted=null, currentDocsRecordId=null, selectedProceedingRecordId=null;
+ let advFilters={status:"",accident:"",vehicle:"",insurance:"",from:"",to:"",hearing:"",priority:"",pdf:""};
+ let advSort="updated_desc", advPageSize=25;
+ const originalRenderTable=renderTable, originalEditRecord=editRecord, originalDeleteRecord=deleteRecord, originalOpenDetail=openDetail;
+ function safeJson(v,f){try{return JSON.parse(v)}catch(e){return f}}
+ function advSave(){try{localStorage.setItem(ADV_STATE_KEY,JSON.stringify({advFilters,advSort,advPageSize}));}catch(e){}}
+ function advLoad(){const x=safeJson(localStorage.getItem(ADV_STATE_KEY),null);if(x){advFilters=Object.assign(advFilters,x.advFilters||{});advSort=x.advSort||advSort;advPageSize=Number(x.advPageSize)||25}}
+ function esc(v){return escapeHtml(v==null?"":v)}
+ function daysFromToday(date){if(!date)return null;const a=new Date(localDate()+"T00:00:00"),b=new Date(date+"T00:00:00");return Math.round((b-a)/86400000)}
+ function hearingDate(r){return latestNextDate(r)||""}
+ function matchesAdvanced(r){
+   const f=advFilters, s=String(r.finalStatus||r.judgementStatus||"");
+   if(f.status && s.toLowerCase()!==f.status.toLowerCase()) return false;
+   if(f.accident && String(r.accidentType||"")!==f.accident) return false;
+   if(f.vehicle && String(r.vehicleType||"")!==f.vehicle) return false;
+   if(f.insurance && !String(r.insuranceCo||"").toLowerCase().includes(f.insurance.toLowerCase())) return false;
+   if(f.priority && String(r.importanceLevel||"")!==f.priority) return false;
+   if(f.from && String(r.accidentDate||"")<f.from) return false;
+   if(f.to && String(r.accidentDate||"")>f.to) return false;
+   if(f.pdf==="yes" && !r.judgmentPdfUrl)return false;
+   if(f.pdf==="no" && r.judgmentPdfUrl)return false;
+   const d=daysFromToday(hearingDate(r));
+   if(f.hearing==="today" && d!==0)return false;
+   if(f.hearing==="7" && (d===null||d<0||d>7))return false;
+   if(f.hearing==="30" && (d===null||d<0||d>30))return false;
+   if(f.hearing==="overdue" && (d===null||d>=0))return false;
+   if(f.hearing==="none" && d!==null && d>=0)return false;
+   return true;
+ }
+ function advancedList(){
+   const q=$("globalSearchInput")?.value.trim().toLowerCase()||"";
+   let list=records.filter(r=>!r.deleted&&!r.deletedAt&&matchesAdvanced(r)&&(!q||JSON.stringify(r).toLowerCase().includes(q)));
+   list.sort((a,b)=>{
+    if(advSort==="case_asc"||advSort==="case_desc"){const x=String(a.caseTitle||a.claimantName||"").toLowerCase(),y=String(b.caseTitle||b.claimantName||"").toLowerCase();return advSort==="case_asc"?x.localeCompare(y):y.localeCompare(x)}
+    if(advSort==="mact_asc")return String(a.mactNo||"").localeCompare(String(b.mactNo||""),undefined,{numeric:true});
+    if(advSort==="next_asc")return String(hearingDate(a)||"9999").localeCompare(String(hearingDate(b)||"9999"));
+    if(advSort==="accident_asc"||advSort==="accident_desc"){const x=String(a.accidentDate||""),y=String(b.accidentDate||"");return advSort==="accident_asc"?x.localeCompare(y):y.localeCompare(x)}
+    return new Date(b.updatedAt||b.createdAt||0)-new Date(a.updatedAt||a.createdAt||0);
+   });
+   return list;
+ }
+ function renderAdvancedTable(){
+   const tbody=$("recordsTableBody");if(!tbody)return;
+   const list=advancedList(), total=list.length, pages=Math.max(1,Math.ceil(total/advPageSize));advPage=Math.min(Math.max(1,advPage),pages);
+   const start=(advPage-1)*advPageSize, page=list.slice(start,start+advPageSize);
+   const info=$("advancedResultInfo");if(info)info.textContent=`Showing ${total?start+1:0}-${Math.min(start+page.length,total)} of ${total} matching case(s)`;
+   const sum=$("filterSummary");if(sum){const active=Object.entries(advFilters).filter(([,v])=>v).length;sum.textContent=active?`${active} filter(s) applied.`:"No advanced filters applied."}
+   if(!page.length){tbody.innerHTML='<tr><td colspan="11" class="empty">No records match the current search / filters.</td></tr>';renderPagination(total,pages);return}
+   tbody.innerHTML=page.map(r=>{const next=hearingDate(r);return `<tr>
+    <td><input type="checkbox" class="record-check" value="${esc(r.recordId)}"></td>
+    <td><div class="case-link" data-view="${esc(r.recordId)}">${esc(r.caseTitle||"Untitled Case")}${String(r.locked)==="YES"?' 🔒':''}</div><div style="font-size:10px;color:#64748b;margin-top:3px">ID: ${esc(String(r.recordId).slice(0,12))}</div></td>
+    <td>${esc(r.mactNo||"—")}</td><td>${esc(r.claimantName||"—")}</td><td>${esc(formatDate(r.accidentDate)||"—")}</td>
+    <td>${esc(r.vehicleNo||"—")}<br>${esc(r.vehicleType||"")}</td><td>${esc(r.insuranceCo||"—")}</td><td>${esc(formatDate(next)||"—")}</td>
+    <td>${statusBadge(r.finalStatus||r.judgementStatus)}</td>
+    <td>${r.judgmentPdfUrl?`<button class="btn btn-light btn-sm pdf-open" data-id="${esc(r.recordId)}">📄 View</button>`:'<span style="color:#94a3b8">No PDF</span>'}<button class="btn btn-light btn-sm adv-docs" data-docs="${esc(r.recordId)}" style="margin-top:4px">📁 Docs${Array.isArray(r.documents)&&r.documents.length?' ('+r.documents.length+')':''}</button></td>
+    <td><div style="display:flex;gap:5px;flex-wrap:wrap"><button class="btn btn-primary btn-sm" data-edit="${esc(r.recordId)}">Edit</button><button class="btn btn-warning btn-sm" data-hearing="${esc(r.recordId)}">Date</button><button class="btn btn-danger btn-sm" data-delete="${esc(r.recordId)}">Delete</button></div></td>
+   </tr>`}).join("");
+   renderPagination(total,pages);
+ }
+ function renderPagination(total,pages){const box=$("advancedPagination");if(!box)return;let b='';for(let i=1;i<=pages&&i<=12;i++)b+=`<button class="btn ${i===advPage?'btn-success':'btn-light'} btn-sm" data-page="${i}">${i}</button>`;box.innerHTML=`<span class="adv-muted">Page ${advPage} / ${pages} • ${total} results</span><div class="adv-page-buttons"><button class="btn btn-light btn-sm" data-page="prev">‹</button>${b}<button class="btn btn-light btn-sm" data-page="next">›</button></div>`}
+ renderTable=renderAdvancedTable;
+ function bind(id,event,fn){const el=$(id);if(el)el.addEventListener(event,fn)}
+ function syncAfterMutation(msg){saveLocal();renderAll();if(msg)toast(msg);if(typeof syncCloud==="function")syncCloud()}
+ function addAudit(action,id,details){try{const arr=safeJson(localStorage.getItem(AUDIT_KEY),[]);arr.unshift({id:uid(),time:nowISO(),action,recordId:id||"",details:details||""});localStorage.setItem(AUDIT_KEY,JSON.stringify(arr.slice(0,500)));}catch(e){}}
+ function getSelectedIds(){return [...document.querySelectorAll(".record-check:checked")].map(x=>String(x.value))}
+ function refreshBackupKpis(){const b=$("backupCount"),s=$("backupSize"),l=$("backupLast");if(b)b.textContent=records.length;let size=0;try{size=new Blob([JSON.stringify({records,sections,audit:safeJson(localStorage.getItem(AUDIT_KEY),[])})]).size/1024}catch(e){}if(s)s.textContent=size.toFixed(1)+" KB";if(l)l.textContent=localStorage.getItem("mact_last_local_backup")||"Never"}
+ function downloadJsonBackup(){const payload={schema:2,app:"MACT Legal Portal",exportedAt:nowISO(),records,sections,customFields:safeJson(localStorage.getItem(CUSTOM_FIELDS_KEY),[]),layout:safeJson(localStorage.getItem(LAYOUT_STORAGE_KEY),null),audit:safeJson(localStorage.getItem(AUDIT_KEY),[])};downloadBlob(new Blob([JSON.stringify(payload,null,2)],{type:"application/json"}),`MACT_Backup_${localDate()}.json`);localStorage.setItem("mact_last_local_backup",new Date().toLocaleString());refreshBackupKpis();toast("JSON backup downloaded.")}
+ function restoreJson(file){const rd=new FileReader();rd.onload=()=>{try{const p=JSON.parse(rd.result);if(!Array.isArray(p.records))throw new Error("Invalid backup");let added=0,updated=0;const map=new Map(records.map(r=>[String(r.recordId),r]));p.records.forEach(x=>{if(!x||typeof x!=="object")return;x.recordId=x.recordId||uid();x.updatedAt=x.updatedAt||nowISO();if(map.has(String(x.recordId))){const old=map.get(String(x.recordId));Object.assign(old,x);updated++}else{map.set(String(x.recordId),x);added++}});records=[...map.values()];if(Array.isArray(p.customFields))localStorage.setItem(CUSTOM_FIELDS_KEY,JSON.stringify(p.customFields));if(Array.isArray(p.layout))localStorage.setItem(LAYOUT_STORAGE_KEY,JSON.stringify(p.layout));if(Array.isArray(p.audit))localStorage.setItem(AUDIT_KEY,JSON.stringify(p.audit));loadSavedLayout();loadCustomFields();renderForm();syncAfterMutation(`Backup restored: ${added} added, ${updated} updated.`)}catch(e){console.error(e);toast("Restore failed: invalid JSON backup.")}};rd.readAsText(file)}
+ function openDuplicates(){const groups={};records.forEach(r=>{const keys=[];if(r.mactNo)keys.push("MACT No.: "+String(r.mactNo).trim().toLowerCase());if(r.fileNumber)keys.push("File No.: "+String(r.fileNumber).trim().toLowerCase());if(r.vehicleNo&&r.accidentDate)keys.push("Vehicle + Accident: "+String(r.vehicleNo).trim().toLowerCase()+"|"+r.accidentDate);keys.forEach(k=>(groups[k]||(groups[k]=[])).push(r))});const dup=Object.entries(groups).filter(([,v])=>v.length>1);$("duplicatesBody").innerHTML=dup.length?dup.map(([k,arr])=>`<div class="adv-panel"><strong>⚠️ ${esc(k)}</strong>${arr.map(r=>`<div style="display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid #e2e8f0"><span>${esc(r.caseTitle||r.claimantName||"Untitled")} — ${esc(r.mactNo||"")}</span><button class="btn btn-light btn-sm" data-dup-view="${esc(r.recordId)}">Open</button></div>`).join("")}</div>`).join(""):'<div class="empty">No likely duplicates found.</div>';openModal("duplicatesModal")}
+ function openAnalytics(){const active=records.filter(r=>{const s=String(r.finalStatus||r.judgementStatus||"").toLowerCase();return !/closed|disposed|settled/.test(s)}).length;const pending=records.filter(r=>String(r.finalStatus||r.judgementStatus||"").toLowerCase().includes("pending")).length;const hearings=getAllHearings();const today=hearings.filter(x=>x.date===localDate()).length;const next7=hearings.filter(x=>{const d=daysFromToday(x.date);return d!==null&&d>=0&&d<=7}).length;const pdf=records.filter(r=>r.judgmentPdfUrl).length;const types={};records.forEach(r=>types[r.accidentType||"Unknown"]=(types[r.accidentType||"Unknown"]||0)+1);const ins={};records.forEach(r=>{const k=r.insuranceCo||"Not entered";ins[k]=(ins[k]||0)+1});$("analyticsBody").innerHTML=`<div class="adv-kpis"><div class="adv-kpi"><b>${records.length}</b><span>Total Cases</span></div><div class="adv-kpi"><b>${active}</b><span>Active</span></div><div class="adv-kpi"><b>${pending}</b><span>Pending</span></div><div class="adv-kpi"><b>${today}</b><span>Today's Hearings</span></div><div class="adv-kpi"><b>${next7}</b><span>Next 7 Days</span></div><div class="adv-kpi"><b>${pdf}</b><span>Judgment PDFs</span></div></div><div class="section"><div class="section-title">Accident Type Breakdown</div><div class="section-body">${Object.entries(types).map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:6px;border-bottom:1px solid #eee"><span>${esc(k)}</span><b>${v}</b></div>`).join("")||"None"}</div></div><div class="section"><div class="section-title">Top Insurance Companies</div><div class="section-body">${Object.entries(ins).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:6px;border-bottom:1px solid #eee"><span>${esc(k)}</span><b>${v}</b></div>`).join("")}</div></div>`;openModal("analyticsModal")}
+ function openDocs(id){const r=getRecord(id);if(!r)return;currentDocsRecordId=id;if(!Array.isArray(r.documents))r.documents=[];$("documentsCaseTitle").textContent=`${r.caseTitle||"Untitled Case"} • ${r.mactNo||""}`;renderDocs();openModal("documentsModal")}
+ function renderDocs(){const r=getRecord(currentDocsRecordId);const box=$("documentsList");if(!r||!box)return;box.innerHTML=r.documents?.length?r.documents.map((d,i)=>`<div class="adv-doc"><div><strong>${esc(d.name)}</strong><div class="adv-muted">${esc(d.type||"file")} • ${(Number(d.size||0)/1024).toFixed(1)} KB • ${esc(d.addedAt||"")}</div></div><div><button class="btn btn-light btn-sm" data-doc-open="${i}">Open</button> <button class="btn btn-danger btn-sm" data-doc-delete="${i}">Delete</button></div></div>`).join(""):'<div class="empty">No additional documents attached.</div>'}
+ function openDoc(i){const r=getRecord(currentDocsRecordId),d=r?.documents?.[i];if(!d?.data)return;const w=window.open();if(!w){toast("Please allow popups to open the document.");return}if(d.type==="application/pdf"||String(d.type).startsWith("image/")){w.document.write(`<iframe src="${d.data}" style="border:0;width:100vw;height:100vh"></iframe>`)}else{const a=w.document.createElement("a");a.href=d.data;a.download=d.name;a.textContent="Download "+d.name;w.document.body.appendChild(a)}w.document.close()}
+ function addDoc(){const input=$("caseDocumentInput"),file=input?.files?.[0],r=getRecord(currentDocsRecordId);if(!file||!r)return;if(file.size>2*1024*1024){toast("Document too large. Maximum 2 MB per additional document.");return}const rd=new FileReader();rd.onload=()=>{if(!Array.isArray(r.documents))r.documents=[];if(r.documents.length>=10){toast("Maximum 10 additional documents per case.");return}r.documents.push({id:uid(),name:file.name,type:file.type||"application/octet-stream",size:file.size,addedAt:nowISO(),data:rd.result});r.updatedAt=nowISO();addAudit("Document added",r.recordId,file.name);saveLocal();renderDocs();renderAll();input.value="";toast("Document added.");syncCloud()};rd.readAsDataURL(file)}
+ function timelineHtml(r){const events=[];(r.createdAt||r.timestamp)&&events.push({date:r.createdAt||new Date(r.timestamp).toISOString(),title:"Case created",notes:"Record created"});(r.proceedings||[]).forEach((p,i)=>events.push({date:p.proceedingDate||p.nextDate||"",title:`Proceeding ${i+1}`,notes:p.notes||"",next:p.nextDate}));if(r.dateJudgementCompromise)events.push({date:r.dateJudgementCompromise,title:"Judgment / Compromise",notes:r.compensationAmount?`Amount: ${r.compensationAmount}`:""});if(r.updatedAt)events.push({date:r.updatedAt,title:"Last updated",notes:"Record modified"});events.sort((a,b)=>String(b.date).localeCompare(String(a.date)));return events.map(e=>`<div class="adv-timeline-item"><strong>${esc(e.title)}</strong><div class="adv-muted">${esc(e.date?formatDate(String(e.date).slice(0,10)):"—")}${e.next?' → Next: '+esc(formatDate(e.next)):''}</div><div>${esc(e.notes||"")}</div></div>`).join("")||'<div class="empty">No timeline events.</div>'}
+ function enhanceDetail(id){const r=getRecord(id);if(!r)return;const body=$("fileDetailBody");if(!body)return;const block=`<div class="section"><div class="section-title">🕘 Case Timeline</div><div class="section-body"><div class="adv-timeline">${timelineHtml(r)}</div></div></div><div class="section"><div class="section-title">📁 Documents</div><div class="section-body"><button class="btn btn-light" data-open-docs-detail="${esc(r.recordId)}">📁 Manage Documents (${r.documents?.length||0})</button></div></div>`;body.insertAdjacentHTML("beforeend",block);const procSection=[...body.querySelectorAll(".section")].find(x=>x.textContent.includes("Proceedings"));if(procSection){const items=procSection.querySelectorAll(".proceeding");items.forEach((item,i)=>{item.insertAdjacentHTML("beforeend",`<div style="margin-top:8px;display:flex;gap:6px"><button class="btn btn-light btn-sm" data-proc-edit="${i}">✏️ Edit</button><button class="btn btn-danger btn-sm" data-proc-delete="${i}">🗑️ Delete</button></div>`)})}}
+ openDetail=function(id){originalOpenDetail(id);setTimeout(()=>enhanceDetail(id),0)};
+ editRecord=function(id){const r=getRecord(id);if(r&&String(r.locked)==="YES"){if(!confirm("This record is LOCKED. Unlock it and continue editing?"))return;r.locked="NO";r.updatedAt=nowISO();saveLocal()}originalEditRecord(id)};
+ deleteRecord=function(id){const r=getRecord(id);if(!r)return;if(String(r.locked)==="YES"){toast("Locked record cannot be deleted. Unlock it first.");return}if(!confirm(`Move this record to Recycle Bin?\n\n${r.caseTitle||r.claimantName||r.mactNo||"Selected Case"}`))return;advDeleted={record:JSON.parse(JSON.stringify(r)),deletedAt:nowISO()};try{localStorage.setItem(TRASH_KEY,JSON.stringify(advDeleted))}catch(e){}r.deleted=true;r.deletedAt=advDeleted.deletedAt;r.deleteSource="user";r.updatedAt=nowISO();addAudit("Record deleted",r.recordId,r.caseTitle||r.mactNo||"");saveLocal();renderAll();showUndoToast();syncCloud()};
+function showUndoToast(){const t=$("toast");if(!t)return;t.textContent="Record deleted. Click here within 10 seconds to Undo.";t.classList.add("show");clearTimeout(showUndoToast.timer);t.onclick=()=>{if(!advDeleted)return;const r=getRecord(advDeleted.record.recordId);if(r){r.deleted=false;r.deletedAt="";r.deleteSource="";r.restoredAt=nowISO();r.updatedAt=nowISO();saveLocal();renderAll();addAudit("Record restored",""+r.recordId,"Undo delete");toast("Delete undone.");syncCloud()}advDeleted=null;t.onclick=null;t.classList.remove("show")};showUndoToast.timer=setTimeout(()=>{t.onclick=null;advDeleted=null;t.classList.remove("show")},10000)}
+bind("toggleFiltersBtn","click",()=>{$("advancedFiltersPanel").hidden=!$("advancedFiltersPanel").hidden});
+ bind("applyFiltersBtn","click",()=>{advFilters={status:$("filterStatus").value,accident:$("filterAccident").value,vehicle:$("filterVehicle").value,insurance:$("filterInsurance").value.trim(),from:$("filterAccidentFrom").value,to:$("filterAccidentTo").value,hearing:$("filterHearing").value,priority:$("filterPriority").value,pdf:$("filterPdf").value};advPage=1;advSave();renderTable()});
+ bind("clearFiltersBtn","click",()=>{advFilters={status:"",accident:"",vehicle:"",insurance:"",from:"",to:"",hearing:"",priority:"",pdf:""};["filterStatus","filterAccident","filterVehicle","filterInsurance","filterAccidentFrom","filterAccidentTo","filterHearing","filterPriority","filterPdf"].forEach(id=>{const e=$(id);if(e)e.value=""});advPage=1;advSave();renderTable()});
+ ["sortRecords","pageSize"].forEach(id=>bind(id,"change",e=>{if(id==="sortRecords")advSort=e.target.value;else advPageSize=Number(e.target.value)||25;advPage=1;advSave();renderTable()}));
+ bind("selectVisibleBtn","click",()=>document.querySelectorAll("#recordsTableBody .record-check").forEach(x=>x.checked=true));bind("clearSelectionBtn","click",()=>document.querySelectorAll(".record-check").forEach(x=>x.checked=false));
+ bind("bulkEditBtn","click",()=>{const ids=getSelectedIds();if(!ids.length){toast("Select records first.");return}$("bulkEditCount").textContent=`${ids.length} record(s) selected.`;openModal("bulkEditModal")});
+ bind("bulkEditForm","submit",e=>{e.preventDefault();const ids=getSelectedIds();let n=0;ids.forEach(id=>{const r=getRecord(id);if(!r||String(r.locked)==="YES")return;if($("bulkFinalStatus").value)r.finalStatus=$("bulkFinalStatus").value;if($("bulkImportance").value)r.importanceLevel=$("bulkImportance").value;if($("bulkInsurance").value.trim())r.insuranceCo=$("bulkInsurance").value.trim();if($("bulkRepresentation").value.trim())r.ourSideRepresentation=$("bulkRepresentation").value.trim();r.updatedAt=nowISO();addAudit("Bulk edit",id,"Multiple fields updated");n++});closeModal("bulkEditModal");syncAfterMutation(`${n} record(s) updated.`)});
+ bind("duplicatesBtn","click",openDuplicates);bind("caseAnalyticsBtn","click",openAnalytics);bind("backupBtn","click",()=>{refreshBackupKpis();openModal("backupModal")});bind("downloadJsonBackupBtn","click",downloadJsonBackup);bind("downloadCsvAdvancedBtn","click",()=>$("exportCsvBtn")?.click());bind("restoreJsonBtn","click",()=>{const f=$("restoreJsonInput")?.files?.[0];if(!f){toast("Choose a JSON backup first.");return}if(confirm("Restore this backup by merging it into current records?"))restoreJson(f)});
+ bind("enableNotificationsBtn","click",async()=>{if(!("Notification" in window)){toast("Browser notifications are not supported here.");return}try{const p=await Notification.requestPermission();if(p==="granted"){localStorage.setItem("mact_notifications","1");toast("Hearing notifications enabled.");checkBrowserHearingAlerts()}else toast("Notification permission was not granted.")}catch(e){toast("Could not enable notifications.")}});
+ bind("addCaseDocumentBtn","click",addDoc);
+ $("advancedPagination")?.addEventListener("click",e=>{const b=e.target.closest("[data-page]");if(!b)return;const list=advancedList(),pages=Math.max(1,Math.ceil(list.length/advPageSize));const v=b.dataset.page;if(v==="prev")advPage=Math.max(1,advPage-1);else if(v==="next")advPage=Math.min(pages,advPage+1);else advPage=Number(v);renderTable()});
+ $("recordsTableBody")?.addEventListener("click",e=>{const d=e.target.closest("[data-docs]");if(d){openDocs(d.dataset.docs);return}});
+ document.addEventListener("click",e=>{
+  const dv=e.target.closest("[data-dup-view]");if(dv){closeModal("duplicatesModal");openDetail(dv.dataset.dupView);return}
+  const od=e.target.closest("[data-open-docs-detail]");if(od){openDocs(od.dataset.openDocsDetail);return}
+  const de=e.target.closest("[data-doc-open]");if(de){openDoc(Number(de.dataset.docOpen));return}
+  const dd=e.target.closest("[data-doc-delete]");if(dd){const r=getRecord(currentDocsRecordId);if(!r)return;if(confirm("Delete this document attachment?")){r.documents.splice(Number(dd.dataset.docDelete),1);r.updatedAt=nowISO();addAudit("Document deleted",r.recordId,"Attachment removed");saveLocal();renderDocs();renderAll();syncCloud()}}return
+  const pe=e.target.closest("[data-proc-edit]");if(pe){const r=getRecord(currentRecordId);if(!r)return;selectedProceedingRecordId=r.recordId;const p=r.proceedings?.[Number(pe.dataset.procEdit)];if(!p)return;$("editingProceedingIndex").value=pe.dataset.procEdit;$("editPDate").value=p.proceedingDate||"";$("editPNext").value=p.nextDate||"";$("editPNotes").value=p.notes||"";openModal("proceedingEditModal");return}
+  const pd=e.target.closest("[data-proc-delete]");if(pd){const r=getRecord(currentRecordId);const i=Number(pd.dataset.procDelete);if(!r||!r.proceedings?.[i])return;if(confirm("Delete this proceeding?")){r.proceedings.splice(i,1);r.updatedAt=nowISO();addAudit("Proceeding deleted",r.recordId,"Proceeding "+(i+1));saveLocal();renderAll();openDetail(r.recordId);syncCloud()}}return
+ });
+ bind("proceedingEditForm","submit",e=>{e.preventDefault();const r=getRecord(selectedProceedingRecordId),i=Number($("editingProceedingIndex").value);if(!r||!r.proceedings?.[i])return;r.proceedings[i]={proceedingDate:$("editPDate").value,nextDate:$("editPNext").value,notes:$("editPNotes").value.trim()};r.updatedAt=nowISO();addAudit("Proceeding edited",r.recordId,"Proceeding "+(i+1));saveLocal();closeModal("proceedingEditModal");renderAll();openDetail(r.recordId);syncCloud();toast("Proceeding updated.")});
+ function checkBrowserHearingAlerts(){if(localStorage.getItem("mact_notifications")!=="1"||!window.Notification||Notification.permission!=="granted")return;const today=localDate();const key="mact_notified_hearings_"+today;if(localStorage.getItem(key)==="1")return;const arr=getAllHearings().filter(x=>x.date===today);if(arr.length){new Notification("MACT Hearing Alert",{body:`You have ${arr.length} hearing(s) today.`});localStorage.setItem(key,"1")}}
+ advLoad();
+ document.addEventListener("DOMContentLoaded",()=>{setTimeout(()=>{const ss=$("sortRecords"),ps=$("pageSize");if(ss)ss.value=advSort;if(ps)ps.value=String(advPageSize);Object.entries(advFilters).forEach(([k,v])=>{const map={status:"filterStatus",accident:"filterAccident",vehicle:"filterVehicle",insurance:"filterInsurance",from:"filterAccidentFrom",to:"filterAccidentTo",hearing:"filterHearing",priority:"filterPriority",pdf:"filterPdf"};if($(map[k]))$(map[k]).value=v});renderTable();checkBrowserHearingAlerts()},500)});
+ setInterval(checkBrowserHearingAlerts,60000);
+ window.MACTAdvanced={filters:()=>({...advFilters}),getFilteredRecords:advancedList,downloadBackup:downloadJsonBackup,openDocuments:openDocs,findDuplicates:openDuplicates,analytics:openAnalytics};
+})();
+
+
+
+/* ===== CLOUD-AWARE RECYCLE BIN ===== */
+(function(){
+ "use strict";
+ function deleted(){return records.filter(r=>r.deleted||r.deletedAt).sort((a,b)=>String(b.deletedAt||b.updatedAt||"").localeCompare(String(a.deletedAt||a.updatedAt||"")));}
+ function renderTrash(){const box=$("recycleBinBody");if(!box)return;const arr=deleted();if(!arr.length){box.innerHTML='<div class="adv-panel">🟢 Recycle Bin is empty.</div>';return;}box.innerHTML=arr.map(r=>`<div class="adv-doc"><div><strong>${escapeHtml(r.caseTitle||r.claimantName||"Untitled Case")}</strong><div class="adv-muted">MACT: ${escapeHtml(r.mactNo||"—")} • Deleted: ${escapeHtml(r.deletedAt||"")}</div></div><button class="btn btn-success btn-sm" data-trash-restore="${escapeHtml(r.recordId)}">♻️ Restore</button></div>`).join("");}
+ function restoreOne(id){const r=getRecord(id);if(!r)return;r.deleted=false;r.deletedAt="";r.deleteSource="";r.restoredAt=nowISO();r.updatedAt=nowISO();addAudit("Record restored",r.recordId,"Recycle Bin");saveLocal();renderAll();renderTrash();toast("Record restored.");syncCloud();}
+ $("recycleBinBtn")?.addEventListener("click",()=>{renderTrash();openModal("recycleBinModal")});
+ $("restoreAllTrashBtn")?.addEventListener("click",()=>{const arr=deleted();if(!arr.length){toast("Recycle Bin is empty.");return}if(!confirm(`Restore ${arr.length} deleted record(s)?`))return;const t=nowISO();arr.forEach(r=>{r.deleted=false;r.deletedAt="";r.deleteSource="";r.restoredAt=t;r.updatedAt=t;addAudit("Record restored",r.recordId,"Restore All")});saveLocal();renderAll();renderTrash();toast(`${arr.length} record(s) restored.`);syncCloud();});
+ $("emptyTrashBtn")?.addEventListener("click",()=>{const arr=deleted();if(!arr.length){toast("Recycle Bin is empty.");return}if(!confirm(`Permanently remove ${arr.length} deleted local record(s)?\n\nCloud copies will remain until explicitly purged there.`))return;records=records.filter(r=>!r.deleted&&!r.deletedAt);saveLocal();renderAll();renderTrash();toast("Local Recycle Bin emptied.");syncCloud();});
+ document.addEventListener("click",e=>{const b=e.target.closest("[data-trash-restore]");if(b)restoreOne(b.dataset.trashRestore)});
+ window.MACTRecycleBin={render:renderTrash,restoreOne};
+})();
+
+/* ===== LOCAL PIN LOCK ===== */
+(function(){
+ const PIN_KEY="mact_local_pin_v1", LOCKED_KEY="mact_local_locked_v1";
+ const hasPin=()=>!!localStorage.getItem(PIN_KEY);
+ function updateLockStatus(){const e=$("lockStatus");if(e)e.textContent=hasPin()?"PIN lock configured":"No PIN lock"}
+ function applyLock(){if(hasPin()&&localStorage.getItem(LOCKED_KEY)==="1"){document.body.dataset.appLocked="1";document.querySelectorAll("body>*:not(#pinUnlockModal)").forEach(x=>x.style.pointerEvents="none");openModal("pinUnlockModal");$("pinUnlock").focus()}}
+ function unlock(){const pin=$("unlockPin").value;if(pin===localStorage.getItem(PIN_KEY)){localStorage.removeItem(LOCKED_KEY);document.body.dataset.appLocked="0";document.querySelectorAll("body>*:not(#pinUnlockModal)").forEach(x=>x.style.pointerEvents="");closeModal("pinUnlockModal");$("unlockPin").value="";$("unlockMsg").textContent="";toast("App unlocked.")}else{$("unlockMsg").textContent="Incorrect PIN."}}
+ $("securityBtn")?.addEventListener("click",()=>{updateLockStatus();openModal("securityModal")});
+ $("savePinBtn")?.addEventListener("click",()=>{const a=$("newPin").value.trim(),b=$("confirmPin").value.trim();if(!/^\d{4,8}$/.test(a)){toast("PIN must be 4–8 digits.");return}if(a!==b){toast("PIN confirmation does not match.");return}localStorage.setItem(PIN_KEY,a);localStorage.setItem(LOCKED_KEY,"1");$("newPin").value="";$("confirmPin").value="";updateLockStatus();closeModal("securityModal");applyLock();toast("PIN saved. App is locked.")});
+ $("removePinBtn")?.addEventListener("click",()=>{if(!hasPin())return;if(confirm("Remove local PIN lock?")){localStorage.removeItem(PIN_KEY);localStorage.removeItem(LOCKED_KEY);updateLockStatus();toast("PIN lock removed.")}});
+ $("unlockBtn")?.addEventListener("click",unlock);$("unlockPin")?.addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+ window.addEventListener("beforeunload",()=>{if(hasPin())localStorage.setItem(LOCKED_KEY,"1")});
+ document.addEventListener("DOMContentLoaded",()=>setTimeout(applyLock,700));
+})();
+
 </script>
 </body>
 </html>
