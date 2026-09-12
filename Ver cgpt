@@ -410,7 +410,7 @@ table{border-collapse:separate;border-spacing:0 6px;margin-top:7px}th{background
 <script>
 "use strict";
 
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZrSRDmqZktZfnD5E1ixU_iN6kWiSoiis6N4lVF8TPtg6WgIFt3UDus9yQGUZg_dqP/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz1QqqZb6Pd95CkUmC8YcYbI3JXo7BES-9zae6f6Ay7bvmKAwrrzJbjIByGD1zXvAzI/exec";
 
 const STORAGE_KEY = "mact_unlimited_records";
 const LAYOUT_STORAGE_KEY = "mact_form_sections_layout";
